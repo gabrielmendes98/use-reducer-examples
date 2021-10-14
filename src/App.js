@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import ContextCounter from './ContextCounter';
+import { CounterProvider } from './contexts/counter';
+import ReducerCounter from './ReducerCounter';
+import StateCounter from './StateCounter';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <StateCounter />
+      <ReducerCounter />
+      <CounterProvider>
+        <ContextCounter />
+        <ContextCounter />
+      </CounterProvider>
+    </>
   );
-}
+};
 
 export default App;
