@@ -1,5 +1,5 @@
-# useReducer examples
+# use-reducer-examples
 
-Exemplos usando o hook useReducer e fazendo a mesma coisa com useState.
+✅ Examples using the useReducer hook and doing the same thing with useState.
 
-Exemplo usando useReducer com context.
+✅ Example using useReducer with context.
